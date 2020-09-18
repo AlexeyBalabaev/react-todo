@@ -47,4 +47,12 @@
       }
     }
   }
+
+  &__add-btn {
+    opacity: .4;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
