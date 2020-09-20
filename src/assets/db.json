@@ -30,22 +30,22 @@
     {
       "id": 1,
       "listId": 2,
-      "text": "Изучить JavaScript",
+      "text": "Изучить JavaScript"
     },
     {
       "id": 2,
       "listId": 2,
-      "text": "Изучить паттерны проектирования",
+      "text": "Изучить паттерны проектирования"
     },
     {
       "id": 3,
       "listId": 2,
-      "text": "ReactJS Hooks (useState, useReducer, useEffect и т.д.)",
+      "text": "ReactJS Hooks (useState, useReducer, useEffect и т.д.)"
     },
     {
       "id": 4,
       "listId": 2,
-      "text": "Redux (redux-observable, redux-saga)",
+      "text": "Redux (redux-observable, redux-saga)"
     }
   ],
   "colors": [
@@ -81,7 +81,7 @@
     },
     {
       "id": 7,
-      "hex": "#110133",
+      "hex": "#08001a",
       "name": "black"
     },
     {

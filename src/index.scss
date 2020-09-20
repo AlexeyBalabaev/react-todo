@@ -34,3 +34,35 @@ body {
     box-sizing: border-box;
   }
 }
+
+.btn {
+  background: #4dd599;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    background:darken(#4dd599, 10%);
+  }
+
+  &:active {
+    background:darken(#4dd599, 20%);
+  }
+}
+
+.field {
+  width: 100%;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+
+  &:focus {
+    border-color: #dbdbdb;
+  }
+}

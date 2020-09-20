@@ -16,6 +16,11 @@
       border-radius: 4px;
     }
 
+    .badge {
+      position: relative;
+      left: 5px;
+    }
+
     i {
       display: inline-flex;
       margin-right: 8px;
@@ -24,26 +29,6 @@
         path {
           fill: #7c7c7c;
         }
-      }
-    }
-
-    .badge {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      position: relative;
-      left: 5px;
-
-      &--green {
-        background: #42b883;
-      }
-
-      &--blue {
-        background: #64c4ed;
-      }
-
-      &--pink {
-        background: #ffbbcc;
       }
     }
   }
