@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+import moduleName from '../'
+
 import List from '../List';
 import Badge from '../Badge';
 
@@ -10,6 +14,12 @@ function AddList({ colors, onAdd }) {
   const [visiblePopup, setVisiblePopup] = useState(false);
   const [selectedColor, selectColor] = useState(colors[0].id);
   const [inputValue, setInputValue] = useState('');
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/lists?_expand=color').then(({ data }) => {
+      console.log(data);
+    });
+  }, [])
 
   const onClose = () => {
     setVisiblePopup(false);
