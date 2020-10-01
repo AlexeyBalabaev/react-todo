@@ -1,0 +1,110 @@
+.tasks {
+
+  &:hover {
+    img {
+      opacity: .2;
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    color: #64c4ed;
+    position: relative;
+
+    img {
+      margin-left: 15px;
+      opacity: 0;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #f2f2f2;
+      position: absolute;
+      bottom: -20px;
+    }
+  }
+
+  &__items {
+    margin-top: 52px;
+
+    &-row {
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 100%;
+        border: 0;
+        margin-left: 15px;
+        font-size: 16px;
+      }
+    }
+  }
+  
+  .checkbox {
+
+    input {
+      display: none;
+    }
+
+    svg {
+      transition: opacity .2s ease-in-out;
+      path {
+        stroke: #f2f2f2;
+      }
+    }
+
+    input:checked + label {
+      background: #4dd599;
+      border-color: #4dd599;
+
+      svg {
+        opacity: 1;
+        path {
+          stroke: #fff;
+        }
+      }
+    }
+
+    &:hover {
+      label {
+        background: #f2f2f2;
+        border-color: #f2f2f2;
+
+        svg {
+          opacity: 1;
+
+          path {
+            stroke: #b3b3b3;
+          }
+        }
+      }
+    }
+    
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #e8e8e8;
+      border-radius: 50%;
+      transition: background .2s ease-in-out, border-color .2s ease-in-out;
+      cursor: pointer;
+
+      svg {
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 
 .list {
+  $self: &;
+
   margin-bottom: 30px;
 
   li {
@@ -8,7 +10,21 @@
     margin-bottom: 2px;
     padding: 10px 12px;
     box-sizing: border-box;
+    transition: background .2s ease-in-out;
     cursor: pointer;
+
+    &:hover #{$self}__remove-icon {
+      opacity: .2;
+    }
+
+    #{$self}__remove-icon {
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
+  
+      &:hover {
+        opacity: .8;
+      }
+    }
 
     &:hover {
       background: rgba(255, 255, 255, .5);
@@ -25,6 +41,10 @@
     .badge {
       position: relative;
       left: 5px;
+    }
+
+    span {
+      flex: 1;
     }
 
     i {
